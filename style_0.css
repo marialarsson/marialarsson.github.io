@@ -1,0 +1,209 @@
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
+body {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
+  padding: 3px;
+}
+
+h1 {
+ font-family: "Helvetica", sans-serif;
+  font-size: 26px;
+  font-weight:normal
+  text-align: center;
+  margin-bottom: 0.0em;
+}
+
+h2 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 20px;
+  text-align: left;
+  margin-top: 2.0em;
+}
+
+
+h3 {
+  font-family: "Helvetica", sans-serif;
+  font-size: 16px;
+  text-align: left;
+  margin-top: 2.0em;
+}
+
+h4 {
+  font-family: "Helvetica", sans-serif;
+  text-decoration: underline;
+  font-weight:normal
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 0.4em;
+
+}
+
+p{
+ text-align: left;
+ font-family: "Georgia", Georgia, serif;
+ font-size: 16px;
+line-height: 150%;
+}
+
+ul{
+  text-align: left;
+  font-family: "Georgia", Georgia, serif;
+  font-size: 16px;
+ line-height: 150%;
+}
+
+p.titletext{
+  margin-top: 0.3em;
+  margin-bottom: 0.5em;
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+}
+
+p.small{
+  font-size: 13px;
+  margin-top: 0.5em;
+}
+
+p.code{
+  font-family: "Courier New", monospace;
+}
+
+p.titletext_left{
+  margin: 0px;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: left;
+}
+
+a:link {
+  text-decoration: none;
+  color: #001EDE;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #000000 ;
+}
+
+a:hover {
+  text-decoration: none;
+  background: #001EDE;
+  color: #FFFFFF;
+}
+
+a:active {
+  text-decoration: none;
+  color: #4169E1;
+}
+
+  tab { padding-left: 2em; }
+
+a.prev,.next:hover {
+  color: #5c5c5c;
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-family: "Georgia", Georgia, serif;
+  font-size: 16px;
+  line-height: 150%;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: -30px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.figureicon {
+  display: block;
+  margin: 10px;
+  height: 100px;
+  border: 1px solid #555;
+}
+
+
+.headerimage {
+  display: block;
+  margin:  auto;
+  width: 100%;
+}
+
+.centerlogo {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  heigth: 50%;
+}
+
+.projecticon {
+  display: block;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  padding-right: 25px;
+}
+
+.righticon {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  height: auto;
+  padding-left: 25px;
+}
+
+.righticon_toppad {
+  display: block;
+  float: right;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  height: auto;
+  padding-left: 25px;
+  padding-top: 25px;
+}
+
+.portrait {
+  display: block;
+  float: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 175px;
+  padding-right: 25px;
+}
+
+div.image-gallery {
+  display: block;
+  float: center;
+}
+
+div.image-gallery img {
+  display: inline-block;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+  height: 0;
+  width: 0;
+  font-size: 1px;
+  line-height: 0;
+}
+
+mark {
+    background-color: #DAF7A6;
+    color: black;
+}
