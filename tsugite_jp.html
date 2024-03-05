@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tsugite</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+
+
+
+<div class="header">
+  <p style="text-align:right"><a href=tsugite_jp.html>JP</a> &nbsp; <a href=tsugite.html>EN</a></p>
+  <h1> Tsugite: 計算機を用いた木工継手・仕口の対話的設計と加工 </h1>
+  <p class=titletext>ラルスン マリア・吉田 博則・梅谷 信行・五十嵐 健夫 <br>
+  東京大学 <br>
+  発表会<a href=https://uist.acm.org/uist2020/ target="_blank">UIST</a>・2020年10月20～23日</p>
+        <figure>
+        <img src="tsugite.png" alt="Tsugite Title Image" class=headerimage>
+
+</div>
+
+<body>
+  <h3>概要</h3>
+    <p>
+      本論文では、新たな木材の接合部(継手・仕口)を設計および製作するためのインタラクティブシステム(Tsugite)を提案する。
+      釘を使わない接合部である木工継手・仕口を新たに設計して製作することは、
+      熟練者でないユーザにとって困難で時間がかかる作業である。
+      我々のシステムは、切削加工機による加工と、
+      計算機を用いたインタラクティブな形状モデリングを組み合わせることによって、
+      カスタムデザインの木工継手・仕口の設計と製作を支援するものである。
+      本システムには、マニュアル編集モードと、ギャラリーモードの２つのモードがある。
+      マニュアルモードでは、リアルタイムに更新される接合部の性能に関する解析結果やシステムからの提案を見ながら、
+      ユーザが手作業で接合部の形状を編集する。
+      性能としては、組み立て可能性、加工可能性、強度などを考慮している。
+      ギャラリーモードでは、あらかじめ計算済みの接合部形状が多数画面に提示され、
+      ユーザはその中から好みのものを選択する。
+      接合部の設計が完成したら、角を丸めるなどの処理をして、3軸CNCフライス盤で製造する。
+      論文では、ユーザスタディによる評価の結果や、実際に設計し製作した接合部や家具の例を示す。
+  </p>
+
+
+  <h3>ビデオ</h3>
+  <p>
+    ビデオ（英語）
+    <iframe
+    width="800"
+    height="450"
+    src="https://www.youtube.com/embed/kR-fwwoKyHk"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </p>
+
+  <h3>論文</h3>
+  <p>
+    Maria Larsson, Hironori Yoshida, Nobuyuki Umetani, and Takeo Igarashi. 2020.
+    Tsugite: Interactive Design and Fabrication of Wood Joints.
+    In Proceedings of the 32nd Annual ACM Symposium on User Interface Software and Technology (UIST '20).
+    Association for Computing Machinery, Virtual Event, USA.
+  </p>
+  <p>
+    <a href="Tsugite_UIST20.pdf" target="_blank">論文・大きいファイル &#128196;</a> (4.9 MB)<br>
+    <a href="Tsugite_UIST20_reduced_file_size.pdf" target="_blank">論文・小さいファイル &#128196;</a> (2.4 MB)<br>
+    <a href=https://dl.acm.org/doi/abs/10.1145/3379337.3415899 target="_blank">ACMリンク &#128279;</a>
+  </p>
+
+
+
+  <h3>発表</h3>
+  <p>長い発表（15分）・短い発表（5分）（英語）</p>
+  <p>
+    <iframe
+      width="395" height="220"
+      src="https://www.youtube.com/embed/q00_XpfHYuA"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <iframe
+      width="395" height="220"
+      src="https://www.youtube.com/embed/BGRLK5scK-0"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </p>
+
+  <h3>ソフト</h3>
+  <p>
+    ダウンロード: <a href="Tsugite_1.0.1.zip" download>Tsugite 1.0.1 	&#11015;</a> (ウインドウズ10)<br>
+    ソースコード: <a href=https://github.com/marialarsson/tsugite target="_blank">Github &#128279;</a><br>
+  </p>
+
+
+
+    <h3>メディア</h3>
+
+    <p><a href=https://www.lemonde.fr/sciences/article/2020/11/11/infographie-automatiser-l-art-du-joint-a-la-japonaise-sans-clou-ni-colle_6059379_1650684.html target="_blank">
+      Infographie: automatiser l’art du joint à la japonaise, sans clou ni colle</a>,
+      ・Hervé Morin and Audrey Lagadec・Le Monde・2020年11月11日（フランス語）</p>
+
+      <p><a href=https://robertmcgrath.wordpress.com/tag/tsugite-interactive-design-and-fabrication-of-wood-joints/ target="_blank">
+        Cool advanced snap together designs for 3D joints</a>
+        ・Robert McGrath's Blog・2020年11月3日（英語）</p>
+
+    <p><a href=https://www.techbriefs.com/component/content/article/tb/stories/blog/38021 target="_blank">
+      Woodworking, Simplified: New Software Aids in Design</a>
+      ・Billy Hurley・Tech Breifs・2020年10月30日（英語）</p>
+    <p><a href=https://hackaday.com/tag/tsugite/ target="_blank">
+      Complex wood joint, thanks to new software's interactive features</a>
+      ・Donald Papp・Hackaday・2020年10月23日（英語）</p>
+      <p><a href=https://www.u-tokyo.ac.jp/content/400148405.pdf target="_blank">東京大学プレスリリース</a>・2020年10月21日</p>
+      <p><a href=https://medium.com/acm-uist/updating-the-art-of-joinery-for-the-21st-century-5ae63531c07 target="_blank">Updating the art of joinery for the 21st century</a>
+        ・ラルスン マリア・UISTブログ・2020年10月10日（英語）</p>
+      <p><a href=https://digifab.or.jp/archives/2738 target="_blank">Handibotを使った継手加工</a>・井上 恵介・
+        一般社団法人デジタルファブリケーション協会・2020年10月5日</p>
+    <p>
+      他のメディア<br>
+      <a href=https://andla.jp/wp/?p=20464 target="_blank">
+            アンドラ</a>・
+            <a href=https://www.nikkei.com/article/DGXLRSP541898_Z11C20A0000000/ target="_blank">
+            日本経済新聞</a>・
+            <a href=https://engineer.fabcross.jp/archeive/201022_tokyo-ac.html target="_blank">
+            fabcross for エンジニア</a><br>
+      英語：<a href=https://scitechdaily.com/simple-software-creates-complex-wooden-joints-that-interlock-with-no-nails-glue-or-tools-needed/ target="_blank">
+      SciTechDaily</a>,
+      <a href=https://techxplore.com/news/2020-10-simple-software-complex-wooden-joints.html target="_blank">
+      TechXplore</a>,
+      <a href=https://www.woodworkingnetwork.com/technology/novel-3d-design-app-easily-creates-complex-japanese-wooden-joints target="_blank">
+      Woodworking Network</a>,
+      <a href=http://altaz.in/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Altaz</a>,
+      <a href=https://news8plus.com/simple-software-creates-complex-wooden-joints/ target="_blank">
+      News8Plus</a>,
+      <a href=https://www.newsbreak.com/news/2086896475675/simple-software-creates-complex-wooden-joints target="_blank">
+      News Break</a>,
+      <a href=https://xpowersoftware.com/very-simple-software-program-produces-complex-picket-joints/ target="_blank">
+      XPower Software</a>,
+      <a href=https://www.eurekalert.org/pub_releases/2020-10/uot-ssc101220.php target="_blank">
+      EurekAlert!</a>,
+      <a href=https://www.brightsurf.com/news/article/102120522807/simple-software-creates-complex-wooden-joints.html target="_blank">
+      BrightSurf</a>,
+      <a href=https://www.techpointi.xyz/2020/10/basic-software-creates-complex-wooden.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed:+techpointi/CeQq+(Tech+Sane+Point)&m=1 target="_blank">
+      Tech Sane Point</a>,
+      <a href=https://www.sciencedaily.com/releases/2020/10/201021112402.htm target="_blank">
+      Science Daily</a>,
+      <a href=https://www.miragenews.com/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Mirage News</a>,
+      <a href=https://tokyodailynews.com/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Tokyo Daily News</a>,
+      <a href=https://gisttree.com/reviews/simple-software-creates-complex-wooden-joints-that-interlock-with-no-nails-glue/ target="_blank">
+      Gist Tree</a>,
+      <a href=https://gadgetsspecialist.com/an-interactive-system-to-design-and-fabricate-structurally-sound-wood-joints-sciencedaily/ target="_blank">
+      Gadgets Specialist</a>,
+      <a href=https://www.ethicaleditor.com/tech/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Ethical Editor</a>,
+      <a href=https://qnewshub.com/technology/simple-software-creates-complex-wooden-joints/ target="_blank">
+      QNewsHub</a>,
+      <a href=https://techandsciencepost.com/news/science/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Tech and Science Post</a>,
+      <a href=https://www.nationaltribune.com.au/simple-software-creates-complex-wooden-joints/ target="_blank">
+      The National Tribune</a>,
+      <a href=https://researchnews.cc/news/3229/Simple-software-creates-complex-wooden-joints#.X5ZoI4gzbZs target="_blank">
+      Research News</a>,
+      <a href=https://scienmag.com/simple-software-creates-complex-wooden-joints/ target="_blank">
+      ScienMag</a>,
+      <a href=https://www.ukcloudnews.com/simple-software-creates-complex-wooden-joints target="_blank">
+      UkCloudNews</a>,
+      <a href=https://sciencecodex.com/simple-software-creates-complex-wooden-joints-659245 target="_blank">
+      Science Codex</a>,
+      <a href=https://timworld.info/simple-software-creates-complex-wooden-joints-that-interlock-with-no-nails-glue-or-tools-needed/ target="_blank">
+      Timworld Washington DC News</a>,
+      <a href=https://sciencenewsnet.in/simple-software-creates-complex-wooden-joints/ target="_blank">
+      Sciencenewsnet.in</a>,
+      <a href=https://theuncoverreality.wordpress.com/2020/10/25/this-simple-software-creates-complex-wooden-joints-science-and-technology/ target="_blank">
+      The Uncovered Reality</a>.
+      <br>
+
+      ポルトガル語：<a href=https://www.inovacaotecnologica.com.br/noticias/noticia.php?artigo=encaixes-madeira-japoneses-programa-gratuito&id=010150201022#.X5ZjN4gzbZt target="_blank">
+      Inovacao Technologica</a>,
+      <a href=https://akahosting.com.br/2020/10/22/programa-gratuito-automatiza-projeto-e-fabricacao-de-encaixes-de-madeira/ target="_blank">
+      Aka</a>,
+      <a href=https://news.quimiweb.com/programa-gratuito-automatiza-projeto-e-fabricacao-de-encaixes-de-madeira-3572.html target="_blank">
+      QW quimiweb</a>,
+      <a href=https://www.engenhariacompartilhada.com.br/noticia/exibir/4912394_software-gratuito-automatiza-projeto-e-fabricacao-de-encaixes-de-madeira target="_blank">
+      Engenharia Compartilhada</a>,
+      <a href=https://social.symplexia.com.br/2020/10/espaco/programa-gratuito-automatiza-projeto-e-fabricacao-de-encaixes-de-madeira/ target="_blank">
+      Synmplexia</a>.<br>
+
+      スペイン語：<a href=https://nuevoperiodico.com/el-software-simple-crea-uniones-de-madera-complejas-que-se-entrelazan-sin-necesidad-de-clavos-pegamento-o-herramientas/ target="_blank">
+      Nuevo Periodico</a>,
+      <a href=https://enciclopediauniverso.com/el-universo-es-enorme/el-software-simple-crea-uniones-de-madera-complejas-que-se-entrelazan-sin-necesidad-de-clavos-pegamento-o-herramientas/ target="_blank">
+      Enciclopedia Universo</a>.<br>
+
+      ロシア語：<a href=https://www.techcult.ru/soft/8933-programma-soedinit-derevyannye-detali-bez-kleya-i-gvozdej target="_blank">
+      Techcult</a>,
+      <a href=https://www.24-my.info/tsuqite-pomojet-soedinit-slojnye-dereviannye-detali-bez-kleia-i-gvozdei/ target="_blank">
+      24-my.info</a>.<br>
+
+      フランス語：<a href=https://www.citizenside.fr/systeme-interactif-concevoir-fabriquer-joints-bois-structurellement-sains-sciencedaily/?__cf_chl_jschl_tk__=ee1a41c99043f170b17e52238d6f7ae74145f166-1603691822-0-Ab5PHT0EqEvXaUisRI_CxNuV46kITd4RRVXKAyhMhAVgzNKKyg1g4cWHLsF7-jH1scNALYVDKM629Vmq6mzcAEvR4EqxvsKIPLgZ9CTo7ZKs-9vRv20zC5c_eaTo4BiAcM3rrDvL-t5qNDsPDPjvAcbeVgFaIYkinJ3_rT27LISz4DUfcnTcRqoVoy27As45aSJxBGWyHx4sMmhqgkQKMWsLoub1CvqDv7lq_arDyvANq6xhphVfFUBFxaxWoSFNeU8UfEB0Ggfn1lBAXRr39fzenUxLmUtm0as8LbTnYWjfg0Y6F5cv34X0OQBFsTCNrBm6JxEChbcIPFUpwVbO269Jmuas9yy8k_wHHIAf09BACBzobKBTiyxkTNHdN-Fmn0p7Lo5YSYoZKG-p5uyWGqQ target="_blank">
+      CitizenSide</a>,
+      <a href=https://www.crumpi.com/2020/10/21/logiciel-simple-cree-complexes-joints-en-bois-qui-interverrouillage-no-ongles-colle-ou-les-outils-necessaires/ target="_blank">
+      Crumpi</a>.<br>
+
+      ドイツ語：<a href=https://www.bauen-aktuell.eu/funktionale-holzverbindungen-konstruieren-ohne-leim-und-naegel/ target="_blank">Bauen aktuell</a>.<br>
+
+      ルーマニア語：<a href=https://www.descopera.ro/lumea-digitala/19530286-cercetatorii-japonezi-au-creat-softul-care-poate-proiecta-mobila target="_blank">
+      Descopera</a>.<br>
+
+      中国語：<a href=http://www.diglog.com/story/1030461.html target="_blank">DigLog</a>.<br>
+
+      ハンガリー語：<a href=https://www.origo.hu/tudomany/20201028-japan-fejlesztes-amivel-mindenkibol-asztalos-lehet.html target="_blank">Origo</a>.
+    </p>
+  </h3>
+
+  <h3>SNS</h3>
+  <p><a href=https://www.instagram.com/tsugite2020/ target="_blank">インスタグラム @tsugite2020</a></p>
+  </h3>
+
+
+    <h3>画像</h3>
+    <p class=pcenter>押すと、大きいファイルを開ける。
+    <div class="image-gallery">
+    <a href="fig_4-tim_jnt.jpg" target="_blank"><img src="fig_4-tim_jnt_small.jpg" class="figureicon"></a>
+    <a href="fig_teaser.pdf" target="_blank"><img src="fig_teaser.jpg" class="figureicon"></a>
+    <a href="fig_overview.pdf" target="_blank"><img src="fig_overview.jpg" class="figureicon"></a>
+    <a href="fig_feedback.pdf" target="_blank"><img src="fig_feedback.jpg" class="figureicon"></a>
+    <a href="fig_operations.pdf" target="_blank"><img src="fig_operations.jpg" class="figureicon"></a>
+    <a href="fig_selected_joint_samples.jpg" target="_blank"><img src="fig_selected_joint_samples_small.jpg" class="figureicon"></a>
+    <a href="fig_fabricated_joints_2_timber.pdf" target="_blank"><img src="fig_fabricated_joints_2_timber.jpg" class="figureicon"></a>
+    <a href="fig_fabricated_joints_millbit.pdf" target="_blank"><img src="fig_fabricated_joints_millbit.jpg" class="figureicon"></a>
+    <a href="fig_fabricated_uist.pdf" target="_blank"><img src="fig_fabricated_uist.jpg" class="figureicon"></a>
+    <a href="fig_chair.pdf" target="_blank"><img src="fig_chair.jpg" class="figureicon"></a>
+    <a href="fig_table.pdf" target="_blank"><img src="fig_table.jpg" class="figureicon"></a>
+    <a href="fig_yatai_ass.jpg" target="_blank"><img src="fig_yatai_ass_small.jpg" class="figureicon"></a>
+    <a href="fig_yatai_diss.jpg" target="_blank"><img src="fig_yatai_diss_small.jpg" class="figureicon"></a>
+    </div></p>
+
+<h3>著者</h3>
+    <p><a href=home.html target="_blank">ラルスン マリア</a><sup>1</sup>・博士課程<br>
+    <a href=http://hy-ma.com/ target="_blank">吉田 博則</a><sup>1,2</sup>・研究員<br>
+    <a href=https://cgenglab.github.io/labpage/ja/authors/admin/ target="_blank">梅谷 信行</a><sup>1</sup>・准教授・
+      <a href=https://cgenglab.github.io/labpage/ja/ target="_blank">梅谷研究室</a><br>
+    <a href=https://www-ui.is.s.u-tokyo.ac.jp/~takeo/index-j.html target="_blank">五十嵐 健夫</a><sup>1</sup>・教授・
+    <a href=https://www-ui.is.s.u-tokyo.ac.jp/ target="_blank">五十嵐研究室</a></p>
+
+    <p>1: 東京大学<br>
+      2: Preferred Networks, Inc.</p>
+
+  <h3>特許</h3>
+  <p> US Provisional Application Number 63/085,401</p>
+
+</body>
+</html>
