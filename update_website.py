@@ -25,7 +25,7 @@ for index,row in publication_data.iterrows():
     #print(row['title'])
 
     txt =  "<img src=" + row["image"] + " alt=" + row["image"] + " class=\"projecticon\">\n"
-    txt += "<p class=\"small\" style=\"margin-bottom:0\">" + row["type"] + "</p>\n"
+    txt += "<p class=\"small\" style=\"margin-bottom: 0\">" + row["type"] + "</p>\n"
     txt += "<h4 style=\"text-decoration:none\" class=\"tight\">"
     if row["new"]=="yes": txt+= "&#127381; "
     txt += "<u>" + row["title"] + "</u></h4>\n"
