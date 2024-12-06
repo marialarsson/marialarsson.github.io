@@ -31,7 +31,7 @@ for index,row in publication_data.iterrows():
     txt += "<u>" + row["title"] + "</u></h4>\n"
     txt += "<p style=\"margin-top:0em;\">\n"
     txt += row["journal_conference_name_year"]
-    if not pd.isna(row["award"]):  txt += ", &#127942;" + row["award"] 
+    if not pd.isna(row["award"]):  txt += ", &#127942; " + row["award"] 
     txt += "<br>\n"
     txt += row["author_list"] + "<br>\n"
     if not pd.isna(row["pdf"]):              txt += "[<a href=\"" + row["pdf"]              + "\" target=\"_blank\">PDF</a>] "
