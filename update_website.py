@@ -30,7 +30,9 @@ for index,row in publication_data.iterrows():
     if row["new"]=="yes": txt+= "&#127381; "
     txt += "<u>" + row["title"] + "</u></h4>\n"
     txt += "<p style=\"margin-top:0em;\">\n"
-    txt += row["journal_conference_name_year"] +"<br>\n"
+    txt += row["journal_conference_name_year"]
+    if not pd.isna(row["award"]):  txt += ", &#127942;" + row["award"] 
+    txt += "<br>\n"
     txt += row["author_list"] + "<br>\n"
     if not pd.isna(row["pdf"]):              txt += "[<a href=\"" + row["pdf"]              + "\" target=\"_blank\">PDF</a>] "
     if not pd.isna(row["video"]):            txt += "[<a href=\"" + row["video"]            + "\" target=\"_blank\">Video</a>] "
@@ -41,6 +43,7 @@ for index,row in publication_data.iterrows():
         else:                                txt += "[<a href=\"" + row["github"]           + "\" target=\"_blank\">GitHub</a>] "
     if not pd.isna(row["abstract_pdf"]):     txt += "[<a href=\"" + row["abstract_pdf"]     + "\" target=\"_blank\">Abstract PDF</a>] "
     if not pd.isna(row["abstract_pdf_jp"]):  txt += "[<a href=\"" + row["abstract_pdf_jp"]  + "\" target=\"_blank\">Abstract PDF (JP)</a>]"
+    
     txt+="<br clear=\"left\"><br></p>\n\n"
 
     publication_html_txt+=txt
