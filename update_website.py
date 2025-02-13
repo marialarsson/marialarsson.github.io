@@ -43,6 +43,8 @@ for index,row in publication_data.iterrows():
         else:                                txt += "[<a href=\"" + row["github"]           + "\" target=\"_blank\">GitHub</a>] "
     if not pd.isna(row["abstract_pdf"]):     txt += "[<a href=\"" + row["abstract_pdf"]     + "\" target=\"_blank\">Abstract PDF</a>] "
     if not pd.isna(row["abstract_pdf_jp"]):  txt += "[<a href=\"" + row["abstract_pdf_jp"]  + "\" target=\"_blank\">Abstract PDF (JP)</a>]"
+    if not pd.isna(row["preprint_pdf"]):  txt += "[<a href=\"" + row["preprint_pdf"]  + "\" target=\"_blank\">ArXiv preprint</a>]"
+    
     
     txt+="<br clear=\"left\"><br></p>\n\n"
 
