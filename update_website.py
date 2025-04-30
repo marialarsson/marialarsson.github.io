@@ -45,7 +45,11 @@ for index,row in data.iterrows():
     txt += "<p style=\"margin-top:0em;\">\n"
     txt += row["journal_conference_name_year"]
     if not pd.isna(row["award"]):  txt += ", &#127942; " + row["award"] 
-    txt += "<br>\n"
+    if row["title"] == "The Mokume Dataset and Inverse Texturing of Solid Wood":
+        txt += '. '
+    else:
+        txt += "<br>\n"
+
     txt += row["author_list"] + "<br>\n"
     txt += clamped_html_link_if_any(row, "pdf",   "PDF")
     txt += clamped_html_link_if_any(row, "preprint_pdf", "Preprint PDF")
