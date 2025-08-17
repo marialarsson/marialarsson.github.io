@@ -59,6 +59,7 @@ for index,row in data.iterrows():
     txt += clamped_html_link_if_any(row, "github", "Code")
     if not pd.isna(row["github_stars"]):
         txt += " <b>&#9734; "+ str(row["github_stars"]) +" stars</b> on GitHub"
+    txt += clamped_html_link_if_any(row, "data", "Data")
     txt += clamped_html_link_if_any(row, "abstract_pdf", "Abstract PDF")
     txt += clamped_html_link_if_any(row, "abstract_pdf_jp", "Abstract PDF (JP)")    
     txt+="<br clear=\"left\"><br></p>\n\n"
