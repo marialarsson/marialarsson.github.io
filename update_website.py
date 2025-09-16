@@ -37,7 +37,9 @@ output_html = header_html
 data = pd.read_excel(r"info.xlsx", sheet_name="publications")
 output_html += "<h2>Publications</h2>\n"
 for index,row in data.iterrows():
-    txt =  "<img src=" + row["image"] + " alt=" + row["image"] + " class=\"projecticon\">\n"
+    txt = ''
+    if not pd.isna(row["image"]):
+        txt +=  "<img src=" + row["image"] + " alt=" + row["image"] + " class=\"projecticon\">\n"
     txt += "<p class=\"small_2\">" + row["type"] + "</p>\n"
     txt += "<h4 style=\"text-decoration:none\" class=\"tight\">"
     txt += new_symbol_if_new(row)
@@ -62,7 +64,9 @@ for index,row in data.iterrows():
     txt += clamped_html_link_if_any(row, "data", "Data")
     txt += clamped_html_link_if_any(row, "abstract_pdf", "Abstract PDF")
     txt += clamped_html_link_if_any(row, "abstract_pdf_jp", "Abstract PDF (JP)")    
-    txt+="<br clear=\"left\"><br></p>\n\n"
+    if pd.isna(row["pdf"]) and pd.isna(row["preprint_pdf"]) and pd.isna(row["video"]) and pd.isna(row["doi"]) and pd.isna(row["abstract_pdf"]): txt+="<br clear=\"left\"></p>\n\n"
+    else: txt+="<br clear=\"left\"><br></p>\n\n"
+    
     output_html+=txt
 
 # --------------------- OTHER WRITING ------------------------#
